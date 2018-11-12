@@ -1,0 +1,150 @@
+/* NavBar stuff */
+.navbar-custom{
+    background-color: lightgray;
+    border: 0px;
+}
+.navbar-left {
+
+  padding-left: 100px;
+  padding-top: 6%;
+  padding-right: 50px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #4A4A4A;
+    color: FFC0CB;
+}
+
+html *
+{
+   font-family: 'Raleway', sans-serif !important;
+   
+}
+body{
+  background-color: #F0DCEF;
+  border: 3px solid blue;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: center;
+  display: grid;
+
+}
+
+
+.title{
+    text-align: center;
+    border-radius: 25px;
+    border: 3px solid black;
+    background: lightblue;
+    color: black;
+    margin-top: 50;
+    padding: 50px;
+} 
+
+
+
+.team{
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 3px solid black;
+    background: lightblue;
+    color: black; 
+    max-width: 450px;
+    height: 500px;
+    padding: 10px;
+    
+    
+} 
+
+.group{
+    text-align: left;
+    color: black;
+    border: 3px solid black;
+    color: black;
+    padding: 10px;
+} 
+
+.deposit{
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 3px solid black;
+    background: lightblue;
+    color: black;
+    padding: 10px;
+    width: 450px;
+    height: 200px;
+
+}
+.balance{
+    text-align: left;
+    color: black;
+    border: 3px solid black;
+    color: black;
+    background: solid white;
+    padding: 10px;
+} 
+
+.mentor{
+    border: 3px solid black;
+    border-radius: 25px;
+    background: lightblue;
+    color: black;
+    padding: 10px;
+    width: 450px;
+    height: 500px;
+}
+.mentor_info{
+    text-align: left;
+    color: black;
+    border: 3px solid black;
+    color: black;
+    background: solid white;
+    padding: 10px;
+} 
+.judging_info{
+    text-align: left;
+    color: black;
+    border: 3px solid black;
+    color: black;
+    background: solid white;
+    padding: 10px;
+} 
+.resources{
+    border-radius: 25px;
+    display: inline-block;
+    border: 3px solid black;
+    text-align: center;
+    background: lightblue;
+    color: black;
+    padding: 10px;
+    width: 450px;
+    height: 500px;
+    align-items: flex-end;
+
+}
+.w3-button{
+    font-size: 20px;
+    width: 300px;
+    background-color: pink;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+.w3-button:hover{
+    background-color: lightpink;
+}
+
+
+
+
+
+
+
+
+
+
