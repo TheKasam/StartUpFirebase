@@ -1,75 +1,76 @@
 ﻿ <head>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCfRx0VipA1hdXHrXvDEktgjH9k9LrguCM",
-            authDomain: "startupsimulation-2146b.firebaseapp.com",
-            databaseURL: "https://startupsimulation-2146b.firebaseio.com",
-            projectId: "startupsimulation-2146b",
-            storageBucket: "startupsimulation-2146b.appspot.com",
-            messagingSenderId: "822796022567"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <title>StarUp Simulation 2018</title>
-
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./index.css">
-    <script src="js/typed.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyCfRx0VipA1hdXHrXvDEktgjH9k9LrguCM",
+			authDomain: "startupsimulation-2146b.firebaseapp.com",
+			databaseURL: "https://startupsimulation-2146b.firebaseio.com",
+			projectId: "startupsimulation-2146b",
+			storageBucket: "startupsimulation-2146b.appspot.com",
+			messagingSenderId: "822796022567"
+		};
+		firebase.initializeApp(config);
+	</script>
+	<title>StartUp Simulation 2018</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./index.css">
+	<script src="js/typed.js"></script>
 </head>
-
-    <body>
-
-
-
-        <!-- CREATE TEAM DASHBOARD-->
-        <div class="w3-container w3-blue">
-            <h1 class="title">Team Dashboard</h1>
+	<body>
+		<!-- CREATE TEAM DASHBOARD-->
+		<div class="w3-container w3-blue">
+			<h1 class="title">Team Dashboard</h1>
 
 
-            <div class="team">
-                <h3> My Team Info</h3>
-                <div class="group">
-                    <p> Group Members: </p>
-                </div>
-            </div>
+			<div class="team">
+				<h3>My Team Info</h3>
+				<h4 id="team_name"></h4>
+				<div class="group">
+					<p> Group Members: </p>
+				</div>
+			</div>
 
-            <div class="deposit">
-                <h3> Deposit Status </h3>
-                <div class="balance">
-                    <p>Balance: </p>
+			<div class="deposit">
+				<h3> Deposit Status </h3>
+				<div class="balance">
+					<p>Balance: </p>
 
-                </div>
-            </div>
+				</div>
+			</div>
 
-            <div class="mentor">
-                <h3> Mentor Info </h3>
-                <div class="mentor_info">
-                    <p>Name: </p>
-                    <p>About the Mentor: </p>
-                </div>
-                <h3>Judging Info</h3>
-                <div class="judge_info">
-                    <p>Judge: </p>
-                    <p>Presentation Time: </p>
-                </div>
-            </div>
+			<div class="mentor">
+				<h3> Mentor Info </h3>
+				<div class="mentor_info">
+					<p>Name: </p>
+					<p>About the Mentor: </p>
+				</div>
+				<h3>Judging Info</h3>
+				<div class="judge_info">
+					<p>Judge: </p>
+					<p>Presentation Time: </p>
+				</div>
+			</div>
 
-            <div class="resources">
-                <h3>  Additional Resources </h3>
-                <div>
-                    <button class="w3-button w3-round-large">Upload Slide Deck</button>
-                </div>
-            </div>
-        </div>
+			<div class="resources">
+				<h3>  Additional Resources </h3>
+				<div>
+					<button class="w3-button w3-round-large">Upload Slide Deck</button>
+				</div>
+			</div>
+		</div>
 
-    </body>
-    </html>
+	</body>
+	<script>
+		var teamID = "teamoneID"
+		var GetTeamName = firebase.database().ref(teamID);
+		GetTeamName.on('value', function(snapshot) {
+		console.log(snapshot.val());
+	});
+	</script>
+	</html>
